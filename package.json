@@ -1,7 +1,7 @@
 {
   "name": "learnstorybook-design-system-with-actions",
   "description": "Learn Storybook design system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "main": "dist/index.js",
   "private": false,
@@ -23,7 +23,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public --ci",
     "build-storybook": "build-storybook -s public",
-    "build-storybook-docs": "build-storybook -s public --docs"
+    "build-storybook-docs": "build-storybook -s public --docs",
+    "release": "auto shipit"
   },
   "babel": {
     "presets": [
