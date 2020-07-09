@@ -1,6 +1,6 @@
 # .github/workflows/chromatic.yml
 # name of our action
-name: 'Chromatic Deployment'
+name: 'Chromatic'
 # the event that will trigger the action
 on: push
 
@@ -13,14 +13,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: yarn
-      - run : yarn test
+      #- run : yarn test
       #- run: yarn build-storybook
-      #- uses: chromaui/action@v1
+      - uses: chromaui/action@v1
         # options required to the GitHub chromatic action
-        #with:
+        with:
           # our project token, to see how to obtain it
           # refer to https://www.learnstorybook.com/intro-to-storybook/react/en/deploy/
-          #projectToken: project-token
-          #token: ${{ secrets.GITHUB_TOKEN }}
-          # the name of the folder where Storybook will be exported into.
-          #storybookBuildDir: storybook-static
+          projectToken: d7pka2o3z65
+          token: ${{ secrets.GITHUB_TOKEN }}
