@@ -24,7 +24,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
   release:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: " contains(github.ref,'refs/heads/master') && !contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')" 
     steps:
       - name: Publish Design System
         env:
