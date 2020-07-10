@@ -22,27 +22,3 @@ jobs:
           # refer to https://www.learnstorybook.com/intro-to-storybook/react/en/deploy/
           projectToken: d7pka2o3z65
           token: ${{ secrets.GITHUB_TOKEN }}
-  release:
-    runs-on: ubuntu-latest
-    if: "contains(github.ref,'refs/heads/master') && !contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')" 
-    steps:
-      - uses: actions/checkout@v2
-      - name: Prepare repository
-        run: git fetch --unshallow --tags
-      - name: Cache node modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: yarn-deps-${{ hashFiles('yarn.lock') }}
-          restore-keys: |
-            yarn-deps-${{ hashFiles('yarn.lock') }}
-
-      - name: Create Release
-        env:
-          #GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: |
-          yarn install --frozen-lockfile
-          yarn build
-          yarn release
