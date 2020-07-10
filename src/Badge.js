@@ -11,7 +11,7 @@ const BadgeWrapper = styled.div`
   padding: 4px 12px;
   border-radius: 3em;
   font-weight: ${typography.weight.bold};
-
+  border: 2px solid tomato;
   svg {
     height: 12px;
     width: 12px;
