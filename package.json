@@ -5,6 +5,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "private": false,
+  "author": "jonniebigodes (https://github.com/jonniebigodes)",
   "repository": "https://github.com/jonniebigodes/design-systems-with-gh-actions.git",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
