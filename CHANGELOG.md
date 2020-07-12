@@ -1,3 +1,15 @@
+# v0.3.0 (Sun Jul 12 2020)
+
+#### 🚀 Enhancement
+
+- removed verbose [#7](https://github.com/jonniebigodes/design-systems-with-gh-actions/pull/7) ([@jonniebigodes](https://github.com/jonniebigodes))
+
+#### Authors: 1
+
+- [@jonniebigodes](https://github.com/jonniebigodes)
+
+---
+
 # v0.2.0 (Sun Jul 12 2020)
 
 #### 🚀 Enhancement
