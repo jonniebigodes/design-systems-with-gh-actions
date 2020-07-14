@@ -1,7 +1,7 @@
 {
   "name": "@jonniebigodes/learnstorybook-design-system-with-actions",
   "description": "Learn Storybook design system",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "license": "MIT",
   "main": "dist/index.js",
   "private": false,
