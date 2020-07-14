@@ -1,3 +1,15 @@
+# v0.3.1 (Tue Jul 14 2020)
+
+#### 🐛 Bug Fix
+
+- update src/shared/global.js to check styling issues [#10](https://github.com/jonniebigodes/design-systems-with-gh-actions/pull/10) ([@jonniebigodes](https://github.com/jonniebigodes))
+
+#### Authors: 1
+
+- [@jonniebigodes](https://github.com/jonniebigodes)
+
+---
+
 # v0.3.0 (Sun Jul 12 2020)
 
 #### 🚀 Enhancement
